@@ -4,7 +4,7 @@
     margin: 0;
 }
 
-header {
+.header {
     width: 100%;
     font-family: 'Oswald', sans-serif;
     font-family: 'Roboto', sans-serif;
@@ -125,7 +125,7 @@ input {
 }
 
 /* for tablet screen */
-@media only screen and(max-width: 770px) {
+/* @media only screen and(max-width: 770px) {
     .blog {
         grid-template-columns: repeat(2, 1fr);
         width: 100%;
@@ -143,7 +143,7 @@ input {
 }
 
 /* for mobile */
-@media only screen and(max-width: 320px) {
+/* @media only screen and(max-width: 320px) {
     .blog {
         grid-template-columns: repeat(1, 1fr);
         width: 100%;
@@ -164,4 +164,4 @@ input {
         flex-direction: row;
     }
 
-}
+}  */
