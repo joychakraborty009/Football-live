@@ -1,0 +1,167 @@
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+header {
+    width: 100%;
+    font-family: 'Oswald', sans-serif;
+    font-family: 'Roboto', sans-serif;
+    gap: 20px;
+}
+
+.header {
+    background-color: black;
+    display: flex;
+    border-radius: 30px;
+    align-items: center;
+    text-align: center;
+    width: 90%;
+    margin: 0 auto;
+
+}
+
+.text {
+    background-color: red;
+    color: white;
+    border-radius: 5px;
+    padding: 12px;
+}
+
+.header-text {
+    height: 100%;
+    width: 50%;
+    padding: 30px;
+    align-items: center;
+}
+
+.header-text>h1 {
+    color: rgb(51, 167, 167);
+    padding: 30px;
+}
+
+.header-text>p {
+    color: white;
+    padding: 30px;
+}
+
+.header-img {
+    height: 100%;
+    width: 50%;
+    object-fit: cover;
+    object-position: center;
+}
+
+.header-img>img {
+    height: 100%;
+    width: 100%;
+    padding: 0%;
+}
+
+.main {
+    margin: 50px auto;
+    width: 90%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.sidebar {
+    background-color: black;
+    width: 20%;
+    padding: 0%;
+    height: 312px;
+    border-radius: 10px;
+    font-size: 70px;
+    text-align: center;
+    padding: 10px;
+}
+
+.blog {
+    width: 78%;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 24px;
+}
+
+input {
+    border-radius: 5px;
+    padding: 5px;
+
+}
+
+.div1 {
+    border-radius: 8px;
+    border: solid rgb(180, 176, 176);
+    border-radius: 8px;
+    border: 1px solid rgb(180, 176, 176);
+}
+
+.div1>img {
+    width: 100%;
+}
+
+.display {
+    display: flex;
+    justify-content: space-around;
+}
+
+.content {
+    color: black;
+}
+
+.footer {
+    background-color: rgb(4, 4, 4);
+    grid-column: 1 / -1;
+    text-align: center;
+    color: white;
+    padding: 100px;
+    width: 100%;
+}
+
+.flex {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+/* for tablet screen */
+@media only screen and(max-width: 770px) {
+    .blog {
+        grid-template-columns: repeat(2, 1fr);
+        width: 100%;
+    }
+
+    .main {
+        flex-direction: column;
+    }
+
+    .sidebar {
+        display: flex;
+        height: 100px;
+        background: none;
+    }
+}
+
+/* for mobile */
+@media only screen and(max-width: 320px) {
+    .blog {
+        grid-template-columns: repeat(1, 1fr);
+        width: 100%;
+    }
+
+    .main {
+        flex-direction: row;
+    }
+
+    .sidebar {
+        display: flex;
+        height: 100px;
+        background: none;
+    }
+
+    .header {
+        display: flex;
+        flex-direction: row;
+    }
+
+}
